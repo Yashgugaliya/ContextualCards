@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/remind_later_cv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="75dp"
+        android:theme="@style/Theme.MaterialComponents.DayNight">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:drawableTop="@drawable/ic_remind_later"
+            android:text="Remind Later"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/dismiss_now_cv"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@id/remind_later_cv"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="75dp"
+        android:theme="@style/Theme.MaterialComponents.DayNight">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:drawableTop="@drawable/ic_dismiss_now"
+            android:text="Dismiss Now"
+            android:textAlignment="center"
+            android:textColor="@android:color/black" />
+
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/big_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:background="#454aa6"
+        android:theme="@style/Theme.MaterialComponents.DayNight">
+
+<LinearLayout
+    android:id="@+id/linear_layout_hc3"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="33dp">
+
+    <TextView
+        android:id="@+id/title_hc3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text="Hii"
+        android:layout_marginTop="125dp"/>
+
+    <TextView
+        android:id="@+id/subtitle_hc3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hii"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/action_button_hc3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="30dp"
+        android:text="Action"/>
+
+</LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
